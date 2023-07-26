@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script/style.css">
+    <title>Seller Admin Page</title>
+</head>
+<body>
+    <h1>Sellers Admin Panel</h1>
+    
+    <!-- Form to add products -->
+    <form id="addProductForm">
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="productprice">Product Price:</label>
+        <input type="text" id="productprice" required>
+
+        <label for="categories">Choose Category:</label>
+        <select id="categories" required>
+            <option value="electronics">Electronics</option>
+            <option value="skincare">Skincare</option>
+            <option value="food">Food</option>
+        </select>
+
+        <button type="button" onclick="addProduct()">Add Product</button>
+        <button type="button" id="updatebutton" style="display: none;">Update Product</button>
+    </form>
+    
+    <!-- Product List -->
+    <h2>Product List</h2>
+    <ul id="productList"></ul>
+    <script src="script/script.js"></script>
+</body>
+</html>
